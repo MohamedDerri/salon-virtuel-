@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <title>Salon Virtuel | Accueil</title>
+</head>
+
+<body>
+  <!-- Navbar Component -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#"><img class="img-responsive" style="width: 10em" src="img/logo.png" alt="um6p logo"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav ml-auto nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a id="home-tab" data-toggle="tab" role="tab" aria-controls="home" aria-selected="true" class="nav-link active" href="#home">HALL D'ACCUEIL<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a id="stands-tab" data-toggle="tab" role="tab" aria-controls="stands" aria-selected="false" class="nav-link" href="#stands">STANDS</a>
+        </li>
+        <li class="nav-item">
+          <a id="account-tab" data-toggle="tab" role="tab" aria-controls="account" aria-selected="false" class="nav-link" href="#account">MON COMPTE</a>
+        </li>
+        <li class="nav-item">
+          <a id="login-tab" data-toggle="tab" role="tab" aria-controls="login" aria-selected="false" class="nav-link" href="#login">LOGIN</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="tab-content">
+    <div id="home" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade show active">
+      <!-- Main Vue -->
+      <div class="jumbotron-fluid">
+        <h1 class="text-center text-white bg-info py-3 mb-0">Portes ouvertes du Salon Virtuel</h1>
+        <img src="img/Vue 1.jpg" alt="Vue" class="card-img-top" id="main-vue" usemap="#main-vue"/>
+        <map name="main-vue">
+            <area target="_blank" alt="flyer2" title="flyer2" href="#" coords="557,1733,505,1645" shape="rect">
+            <area target="_blank" alt="flyer3" title="flyer3" href="#" coords="480,1838,431,1754" shape="rect">
+            <area target="_blank" alt="flyer1" title="flyer1" href="#" coords="434,1645,483,1736" shape="rect">
+            <area target="_blank" alt="flyer4" title="flyer4" href="#" coords="487,1757,547,1838" shape="rect">
+            <area target="_blank" alt="info" title="info" href="#" coords="3409,1138,3812,1841" shape="rect">
+            <area target="_blank" alt="Contact" title="Contact" href="#" coords="1603,1771,2255,1764,2255,1908,1599,1908" shape="poly">
+            <area target="_blank" alt="Chat" title="Chat" href="#" coords="1056,1341,1519,1341,1515,1432,1053,1435" shape="poly">
+            <area target="_blank" alt="Université Mohammed VI Polytechnique" title="Université Mohammed VI Polytechnique" href="https://www.um6p.ma/" coords="1471,795,1776,1092" shape="rect">
+            <area target="_blank" alt="Université Mohammed VI Polytechnique" title="Université Mohammed VI Polytechnique" href="https://www.um6p.ma/" coords="89,847,860,844,853,1313,72,1313" shape="poly">
+        </map>
+      </div>
+    </div>
+    <div id="stands" role="tabpanel" aria-labelledby="stands-tab" class="tab-pane fade">
+      <!-- Stands Vue -->
+      <div class="jumbotron-fluid">
+          <h1 class="text-center text-white bg-info py-3 mb-0">Portes ouvertes du Salon Virtuel</h1>
+          <img src="img/stands.jpg" alt="Vue" class="card-img-top" id="main-vue" usemap="#main-vue"/>
+          <map name="main-vue">
+  
+          </map>
+        </div>
+    </div>
+    <div id="account" role="tabpanel" aria-labelledby="account-tab" class="tab-pane fade">
+      <h3 class="text-center text-white bg-info py-3 mb-0">Bonjour mohamed abid</h3>
+
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </div>
+    <div id="login" role="tabpanel" aria-labelledby="login-tab" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Some content in menu 3.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="container-fluid">
+  <div class="row bg-info">
+    
+      <!-- Coordonnées -->
+    <div id="coordinateID" class="col-12 col-md-4 mt-3">
+      <div class="card bg-info border-0">
+        <div class="card-header text-center text-light">Coordonnées</div>
+          <div class="card-body text-white">
+            <div class="card-text">
+              <i class="fa fa-map-marker mr-3"></i> Mohammed VI Polytechnic University Lot 660, Hay Moulay Rachid Ben Guerir, 43150, Morocco
+            </div>
+              <hr/>
+            <div class="card-text">
+              <i class="fa fa-paper-plane mr-2"></i> contact@UM6P.com
+              </div>
+              <hr/>
+              <div class="card-text">
+                <i class="fa fa-phone mr-2"></i></i> +212 6 11 123 234
+              </div>
+          </div>
+      </div>
+    </div>
+      <!-- A propos -->
+    <div class="col-12 col-md-4 mt-3">
+      <div class="card bg-info border-0">
+        <div class="card-header text-center text-light">A propos</div>
+          <div class="card-body">
+            <a href="https://www.um6p.ma/fr/propos/vision-mission" class="card-link text-white">Vision & Mission</a>
+              <hr/>
+            <a href="https://www.um6p.ma/fr/propos/partenariats-collaborations" class="card-link text-white">Partenariats & Collaborations</a>
+              <hr/>
+            <a href="https://www.um6p.ma/fr/propos/actualites" class="card-link text-white">Actualités</a>
+          </div>
+      </div>
+    </div>
+      <!-- Médias sociaux -->
+    <div class="col-12 col-md-4 mt-3 mb-5">
+      <div class="card bg-info border-0">
+          <div class="card-header text-center text-light">Médias sociaux</div>
+            <div class="card-body row">
+              <div class="col text-center">
+                <a href="#" class="card-link text-white"><i class="fa fa-facebook-f"></i></a></div>
+              <div class="col text-center">
+                <a href="#" class="card-link text-white"><i class="fa fa-instagram"></i></a></div>
+              <div class="col text-center">
+                <a href="#" class="card-link text-white"><i class="fa fa-twitter"></i></a></div>
+              <div class="col text-center">
+                <a href="#" class="card-link text-white"><i class="fa fa-linkedin"></i></a></div>
+              <div class="col text-center">
+                <a href="#" class="card-link text-white"><i class="fa fa-youtube"></i></a></div>
+            </div>
+        </div>
+      </div>
+
+  </div>
+  </div>
+
+  <!-- CopyRight -->
+  <footer class="fixed-bottom bg-light text-center">
+    <small class="text-muted pb-1">© 2020 Copyright:
+      <a href="https://studio3d.ma/" class="font-weight-light"> Studio3d.ma</a>
+    </small>
+  </footer>
+
+  <!-- Bootstrap's JavaScript Files -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <!-- margin bottom fixer -->
+  <script>
+      if($(window).width() > 768) {
+          $('#coordinateID').addClass('mb-5');
+      }
+      window.addEventListener("resize", function() {
+      if($(window).width() > 768) { $('#coordinateID').addClass('mb-5');
+      }else { $('#coordinateID').removeClass('mb-5');}
+      });
+  </script>
+  <!-- image mapping -->
+  <script src="js/jquery.rwdImageMaps.min.js"></script>
+  <script>$('img[usemap]').rwdImageMaps();</script>
+</body>
+
+</html>

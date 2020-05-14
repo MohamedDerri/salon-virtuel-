@@ -1,0 +1,10 @@
+
+*								{ margin: 0; padding: 0; }
+body							{ font-size: 62.5%; font-family: Arial, sans-serif; }
+img								{ border: none; margin-top: 100px; }
+
+div#page-wrap					{ width: 733px; margin: 0 auto;}
+
+.prototip 						{ position: absolute; }
+.prototip .silver 				{ width: 733px; font-size: 1.8em; }
+.prototip .silver .content 		{ text-align: center; padding: 10px 0; }

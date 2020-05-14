@@ -1,0 +1,14 @@
+.videoContainer {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 15%;
+  width: 15%;
+  bottom: 15rem;
+}
+
+.videoContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}

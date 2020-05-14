@@ -1,0 +1,28 @@
+body {
+    padding-top: 70px;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.nav-item:hover {
+    border-bottom: 2px solid rgb(39, 121, 146);
+}
+
+.nav-tabs > li > a {
+    border: medium none;
+    color:rgb(197, 197, 197);
+}
+.nav-tabs > li > a:hover {
+    border: medium none;
+    border-radius: 0;
+    color:rgb(22, 16, 16);
+}
+@media screen and (max-width: 768px) {
+    #main-vue {
+        height: 30em;
+    }
+}

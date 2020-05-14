@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+   <!-- font awesome -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- video css -->
+  <link rel="stylesheet" href="css/vid.css">
+  <title>Salon Virtuel | SAPD</title>
+</head>
+
+<body>
+  <!-- Navbar Component -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#"><img class="img-responsive" style="width: 10em" src="img/logo.png" alt="um6p logo"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">HALL D'ACCUEIL<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="stands.html">STANDS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="moncompte.html">MON COMPTE</a>
+        </li>
+        <li class="nav-item">
+          <a role="button" class="nav-link"  data-toggle="modal" data-target="#loginPopup">LOGIN</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Login Poupup -->
+<div class="modal fade" id="loginPopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">S'IDENTIFIER:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <input type="text" class="form-control" id="email-input" placeholder="Email">
+            <input type="password" class="mt-2 form-control" id="pwd-input" placeholder="Mot de passe">
+            <button type="submit" class="my-2 col-12 btn btn-success">S'identifier</button>
+            <a class="ml-1" href="#"> Mot de passe oublié ?</a>
+          </form>
+        </div>
+        <div class="modal-footer">
+            <a class="col-5 text-primary">Pas encore inscrit <i class="ml-2 fa fa-angle-double-right"></i></a>
+            <a class="col-7 btn btn-success" href="#"><i class="ml-4 fa fa-user"></i> Créer mon compte visiteur</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- IMAGE -->
+  <div class="jumbotron-fluid">
+    <h1 class="text-center text-white bg-info py-3 mb-0">Portes ouvertes du Salon Virtuel</h1>
+    <img src="img/sapd.jpeg" alt="Vue" class="card-img-top" style="height: 620px;" id="main-vue" usemap="#main-vue"/>
+    <map name="main-vue">
+      <area target="_blank" alt="site web " title="site web " href="{{$stand->lien}}" coords="903,161,1384,167,1390,508,989,508,967,464,931,458,912,445,885,415,869,404,841,400,838,272,886,272,880,164" shape="poly">
+      <area target="_blank" alt="contact" title="contact" href="{{route('contact')}}" coords="952,491,977,502,983,520,983,539,971,562,955,567,664,571,639,555,632,527,641,504,664,492" shape="poly">
+      <area target="_blank" alt="chatroom" title="chatroom" href="{{route('conversations')}}" coords="638,328,707,320,601,522,342,527,412,361,413,322" shape="poly">
+      <area target="_blank" alt="video container" title="video container" href="{{$stand->video_institutionnelle}" coords="34,117,359,312" shape="rect">
+      <area target="_blank" alt="site web " title="site web " href="https://www.um6p.ma/fr" coords="616,91,743,217" shape="rect">
+      <area target="" alt="flyer1" title="flyer1" href="" coords="180,450,202,450,201,486,180,485" shape="poly">
+      <area target="" alt="flyer2" title="flyer2" href="" coords="211,450,230,450,230,486,210,485" shape="poly">
+      <area target="" alt="flyer3" title="flyer3" href="" coords="182,494,199,494,199,527,180,527" shape="poly">
+      <area target="" alt="flyer4" title="flyer4" href="" coords="205,495,224,495,223,530,205,529" shape="poly">
+    </map>
+  </div>
+  <div class="videoContainer">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0gP4qbv4GY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <!-- Footer -->
+  <div class="container-fluid">
+  <div class="row bg-info">
+    
+      <!-- Coordonnées -->
+    <div id="coordinateID" class="col-12 col-md-4 mt-3">
+      <div class="card bg-info border-0">
+        <div class="card-header text-center text-light">Coordonnées</div>
+          <div class="card-body text-white">
+            <div class="card-text">
+              <i class="fa fa-map-marker mr-3"></i> Mohammed VI Polytechnic University Lot 660, Hay Moulay Rachid Ben Guerir, 43150, Morocco
+            </div>
+              <hr/>
+            <div class="card-text">
+              <i class="fa fa-paper-plane mr-2"></i> contact@UM6P.com
+              </div>
+              <hr/>
+              <div class="card-text">
+                <i class="fa fa-phone mr-2"></i></i> +212 6 11 123 234
+              </div>
+          </div>
+      </div>
+    </div>
+      <!-- A propos -->
+    <div class="col-12 col-md-4 mt-3">
+      <div class="card bg-info border-0">
+        <div class="card-header text-center text-light">A propos</div>
+          <div class="card-body">
+            <a href="https://www.um6p.ma/fr/propos/vision-mission" class="card-link text-white">Vision & Mission</a>
+              <hr/>
+            <a href="https://www.um6p.ma/fr/propos/partenariats-collaborations" class="card-link text-white">Partenariats & Collaborations</a>
+              <hr/>
+            <a href="https://www.um6p.ma/fr/propos/actualites" class="card-link text-white">Actualités</a>
+          </div>
+      </div>
+    </div>
+      <!-- Médias sociaux -->
+    <div class="col-12 col-md-4 mt-3 mb-5">
+      <div class="card bg-info border-0">
+          <div class="card-header text-center text-light">Médias sociaux</div>
+            <div class="card-body row">
+              <div class="col text-center">
+                <a href="#" class="card-link text-white"><i class="fa fa-facebook-f"></i></a></div>
+              <div class="col text-center">
+                <a href="#" class="card-link text-white"><i class="fa fa-instagram"></i></a></div>
+              <div class="col text-center">
+                <a href="#" class="card-link text-white"><i class="fa fa-twitter"></i></a></div>
+              <div class="col text-center">
+                <a href="#" class="card-link text-white"><i class="fa fa-linkedin"></i></a></div>
+              <div class="col text-center">
+                <a href="#" class="card-link text-white"><i class="fa fa-youtube"></i></a></div>
+            </div>
+        </div>
+      </div>
+
+  </div>
+  </div>
+
+  <!-- CopyRight -->
+  <footer class="fixed-bottom bg-light text-center">
+    <small class="text-muted pb-1">© 2020 Copyright:
+      <a href="https://studio3d.ma/" class="font-weight-light"> Studio3d.ma</a>
+    </small>
+  </footer>
+
+  <!-- Bootstrap's JavaScript Files -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" blockline="dGhpcyB3YXMgbWFkZSBieSBvdXNzbWEgb3VrbGlzaCBhbmQgbW9oYW1lZCBkZXJyaQ=="crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <!-- margin bottom fixer -->
+  <script>
+      if($(window).width() > 768)
+          $('#coordinateID').addClass('mb-5');
+      else
+          $('#main-vue').css('height', '');
+      window.addEventListener("resize", function() {
+      if($(window).width() > 768) { $('#coordinateID').addClass('mb-5');
+      }else { $('#coordinateID').removeClass('mb-5');}
+      if($(window).width() > 768) { $('#main-vue').css('height', '620px');
+      }else { $('#main-vue').css('height', '');}
+      });
+    </script>
+    <!-- image mapping -->
+  <script src="js/jquery.rwdImageMaps.min.js"></script>
+  <script>$('img[usemap]').rwdImageMaps();</script>
+</body>
+
+</html>

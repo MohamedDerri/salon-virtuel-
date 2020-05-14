@@ -1,0 +1,56 @@
+body {
+  padding-top: 70px;
+}
+
+input:focus,
+input:active,
+input:focus,
+select:focus,
+select:active,
+select:focus,
+.btn:focus,
+.btn:active,
+.btn:focus,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-item:hover {
+  border-bottom: 2px solid rgb(39, 121, 146);
+}
+
+.nav-tabs > li > a {
+  border: medium none;
+  color:rgb(197, 197, 197);
+}
+.nav-tabs > li > a:hover {
+  border: medium none;
+  border-radius: 0;
+  color:rgb(22, 16, 16);
+}
+@media screen and (max-width: 768px) {
+  #main-vue {
+      height: 30em;
+  }
+  div.table_historique {
+      font-size: 0.5rem;
+  }
+}
+.dropdown-toggle::after {
+  display: none;
+}
+
+.scrollable-menu {
+  height: auto;
+  max-height: 190px;
+  overflow-x: hidden;
+}
+.jumbotron-fluid #main-vue {
+  max-width: 1300px;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+}
